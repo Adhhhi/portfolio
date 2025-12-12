@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anagha Manoj Kumar - Portfolio</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
+    * {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .skill-badge {
+      transition: all 0.3s ease;
+    }
+    
+    .skill-badge:hover {
+      transform: scale(1.05);
+    }
+    
+    .section-fade {
+      animation: fadeInUp 0.8s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 2.5rem;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border: 3px solid #667eea;
+      background: white;
+    }
+    
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: 0.45rem;
+      top: 1.5rem;
+      width: 2px;
+      height: calc(100% - 1rem);
+      background: #e5e7eb;
+    }
+    
+    .timeline-item:last-child::after {
+      display: none;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full overflow-auto">
+  <div class="w-full min-h-full bg-gray-50"><!-- Hero Section -->
+   <header id="hero" class="relative gradient-bg text-white py-20 px-6 overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+     <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+     <div class="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-6xl mx-auto relative z-10">
+     <div class="text-center mb-8">
+      <div class="inline-block mb-6">
+      <div class="w-32 h-32 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center backdrop-blur-sm border-4 border-white border-opacity-30 overflow-hidden">
+    <img src="img.jpg" alt="Avatar" class="w-full h-full object-cover">
+</div>
+
+      </div>
+      <h1 id="name" class="text-6xl font-bold mb-4 tracking-tight">Anagha Manoj Kumar</h1>
+      <div class="flex flex-wrap justify-center gap-3 mb-6"><span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">📊 Data Analytics</span> <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">🎓 MCA Student</span> <span class="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">💡 Problem Solver</span>
+      </div>
+     </div>
+     <div class="max-w-3xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><a id="phone-link" href="tel:7795796344" class="flex items-center justify-center gap-3 bg-white bg-opacity-10 backdrop-blur-md px-6 py-4 rounded-xl hover:bg-opacity-20 transition border border-white border-opacity-20">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20">
+         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+        </svg><span id="phone" class="font-medium">7795796344</span> </a> <a id="email-link" href="mailto:anaghamanoj185@gmail.com" class="flex items-center justify-center gap-3 bg-white bg-opacity-10 backdrop-blur-md px-6 py-4 rounded-xl hover:bg-opacity-20 transition border border-white border-opacity-20">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20">
+         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg><span id="email" class="font-medium text-sm">anaghamanoj185@gmail.com</span> </a>
+      </div>
+      <div class="flex justify-center gap-4"><a id="linkedin-link" href="https://www.linkedin.com/in/anagha-manoj-11a84526a" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-white text-purple-700 px-6 py-3 rounded-lg hover:shadow-xl transition font-semibold">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+        </svg> LinkedIn </a> <a id="github-link" href="https://github.com/Adhhhi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:shadow-xl transition font-semibold">
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg> GitHub </a>
+      </div>
+     </div>
+    </div>
+   </header><!-- About Section -->
+   <section class="py-12 px-6 bg-white">
+    <div class="max-w-5xl mx-auto section-fade">
+     <h2 id="about-heading" class="text-3xl font-bold text-gray-900 mb-6 text-center">About Me</h2>
+     <div class="bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-xl">
+      <p class="text-gray-700 text-lg leading-relaxed text-center">Highly motivated postgraduate student pursuing MCA with a specialization in data analytics. Passionate about leveraging data to drive strategic solutions and contribute effectively to organizational success.</p>
+     </div>
+    </div>
+   </section><!-- Technical Skills Section -->
+   <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto section-fade">
+     <h2 id="skills-heading" class="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Skills</h2>
+     <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+       <h3 class="text-xl font-semibold text-purple-700 mb-4 flex items-center gap-2"><span>💻</span> Programming &amp; Scripting</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Python</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">R</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">SQL</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">C</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">Java</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">HTML</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">CSS</span> <span class="skill-badge bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+       </div>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+       <h3 class="text-xl font-semibold text-indigo-700 mb-4 flex items-center gap-2"><span>📊</span> Data Analytics</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-badge bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Power BI</span> <span class="skill-badge bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Tableau</span> <span class="skill-badge bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Excel</span> <span class="skill-badge bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium">Google Data Studio</span>
+       </div>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+       <h3 class="text-xl font-semibold text-pink-700 mb-4 flex items-center gap-2"><span>🛠️</span> Other Tools</h3>
+       <div class="flex flex-wrap gap-2"><span class="skill-badge bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">Canva</span> <span class="skill-badge bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">MS Office</span> <span class="skill-badge bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">VS Code</span> <span class="skill-badge bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">Adobe Illustrator</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Projects Section -->
+   <section class="py-12 px-6 bg-white">
+    <div class="max-w-5xl mx-auto section-fade">
+     <h2 id="projects-heading" class="text-3xl font-bold text-gray-900 mb-8 text-center">Projects &amp; Experience</h2>
+     <div class="space-y-6"><a href="https://github.com/Adhhhi" target="_blank" rel="noopener noreferrer" class="block bg-gradient-to-r from-purple-50 to-white p-6 rounded-xl shadow-md card-hover border-l-4 border-purple-500 cursor-pointer group">
+       <div class="flex justify-between items-start mb-2">
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-purple-600 transition">Data Analytics on Fish Reference in Coastal Areas</h3>
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+       </div><p class="text-gray-600 mb-3"><strong>Tools:</strong> Tableau, Excel, Survey Tools</p><p class="text-gray-700">Analyzed fish diversity and trends in coastal regions using live survey data and Tableau visualizations.</p>
+       <div class="mt-4 flex items-center gap-2 text-purple-600 font-medium text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg> View on GitHub
+       </div></a> <a href="https://github.com/Adhhhi" target="_blank" rel="noopener noreferrer" class="block bg-gradient-to-r from-indigo-50 to-white p-6 rounded-xl shadow-md card-hover border-l-4 border-indigo-500 cursor-pointer group">
+       <div class="flex justify-between items-start mb-2">
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-indigo-600 transition">Research Paper – Consumer Buying Behavior</h3>
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-indigo-600 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+       </div><p class="text-gray-600 mb-3"><strong>Publication:</strong> MCA Coursework</p><p class="text-gray-700">Conducted research on factors influencing online consumer decisions and published findings as part of MCA coursework.</p>
+       <div class="mt-4 flex items-center gap-2 text-indigo-600 font-medium text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg> View on GitHub
+       </div></a> <a href="https://github.com/Adhhhi" target="_blank" rel="noopener noreferrer" class="block bg-gradient-to-r from-pink-50 to-white p-6 rounded-xl shadow-md card-hover border-l-4 border-pink-500 cursor-pointer group">
+       <div class="flex justify-between items-start mb-2">
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-pink-600 transition">Bakery Management System</h3>
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-pink-600 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+       </div><p class="text-gray-600 mb-3"><strong>Tools:</strong> HTML, PHP, JavaScript, MySQL</p><p class="text-gray-700">Developed a web-based system to manage bakery products, orders, and billing processes efficiently.</p>
+       <div class="mt-4 flex items-center gap-2 text-pink-600 font-medium text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg> View on GitHub
+       </div></a> <a href="https://github.com/Adhhhi" target="_blank" rel="noopener noreferrer" class="block bg-gradient-to-r from-purple-50 to-white p-6 rounded-xl shadow-md card-hover border-l-4 border-purple-500 cursor-pointer group">
+       <div class="flex justify-between items-start mb-2">
+        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-purple-600 transition">Café Billing System (Mini Project)</h3>
+        <svg class="w-5 h-5 text-gray-400 group-hover:text-purple-600 transition transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+       </div><p class="text-gray-600 mb-3"><strong>Tools:</strong> Python</p><p class="text-gray-700">Created a hobby-based Python project to automate café billing and order calculations.</p>
+       <div class="mt-4 flex items-center gap-2 text-purple-600 font-medium text-sm">
+        <svg class="w-4 h-4" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+        </svg> View on GitHub
+       </div></a>
+     </div>
+    </div>
+   </section><!-- Education Section -->
+   <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto section-fade">
+     <h2 id="education-heading" class="text-3xl font-bold text-gray-900 mb-8 text-center">Education</h2>
+     <div class="space-y-6">
+      <div class="timeline-item">
+       <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-purple-700 mb-2">Master of Computer Applications (MCA)</h3>
+        <p class="text-gray-700 font-medium mb-1">St. Agnes College (Autonomous), Mangalore</p>
+        <p class="text-gray-600">Currently Pursuing</p>
+       </div>
+      </div>
+      <div class="timeline-item">
+       <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-indigo-700 mb-2">Bachelor of Computer Applications (BCA)</h3>
+        <p class="text-gray-700 font-medium mb-1">SDM College of Business Management, Mangalore</p>
+        <p class="text-gray-600">CGPA: 8.61 (2024)</p>
+       </div>
+      </div>
+      <div class="timeline-item">
+       <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-pink-700 mb-2">Pre-University Course (PUC)</h3>
+        <p class="text-gray-700 font-medium mb-1">BGS PU College, Mangalore</p>
+        <p class="text-gray-600">84.16% (2021)</p>
+       </div>
+      </div>
+      <div class="timeline-item">
+       <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-purple-700 mb-2">SSLC</h3>
+        <p class="text-gray-700 font-medium mb-1">BGS High School, Mangalore</p>
+        <p class="text-gray-600">79.04% (2019)</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Achievements Section -->
+   <section class="py-12 px-6 bg-white">
+    <div class="max-w-5xl mx-auto section-fade">
+     <h2 id="achievements-heading" class="text-3xl font-bold text-gray-900 mb-8 text-center">Certifications &amp; Achievements</h2>
+     <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex items-start gap-3 bg-purple-50 p-4 rounded-lg"><span class="text-2xl">🏆</span>
+       <p class="text-gray-700">Secured 1st Place in Coding and Debugging Competition at Yenepoya College</p>
+      </div>
+      <div class="flex items-start gap-3 bg-indigo-50 p-4 rounded-lg"><span class="text-2xl">🎓</span>
+       <p class="text-gray-700">Participated in IoT Workshop at St. Joseph College, Mangalore</p>
+      </div>
+      <div class="flex items-start gap-3 bg-pink-50 p-4 rounded-lg"><span class="text-2xl">✨</span>
+       <p class="text-gray-700">Completed Adobe Illustrator Course from MICE</p>
+      </div>
+      <div class="flex items-start gap-3 bg-purple-50 p-4 rounded-lg"><span class="text-2xl">📚</span>
+       <p class="text-gray-700">Successfully completed Tulu Lipi Course by Government of Karnataka</p>
+      </div>
+      <div class="flex items-start gap-3 bg-indigo-50 p-4 rounded-lg"><span class="text-2xl">💼</span>
+       <p class="text-gray-700">Completed online courses from Office Master, Canva, Deloitte, and Execler</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Activities Section -->
+   <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto section-fade">
+     <h2 id="activities-heading" class="text-3xl font-bold text-gray-900 mb-8 text-center">Extra-Curricular Activities</h2>
+     <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm"><span class="text-2xl">🎨</span>
+       <p class="text-gray-700">Engaged in logo and poster designing projects for small clients and college events</p>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm"><span class="text-2xl">🎭</span>
+       <p class="text-gray-700">Participated in various inter-college fests at AIMIT, Sridevi, Sharada, Yenepoya, Vivekananda, and Puttur colleges</p>
+      </div>
+      <div class="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm"><span class="text-2xl">🏔️</span>
+       <p class="text-gray-700">Participated in one-day trekking and jail visit organized by Rovers and Rangers</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="gradient-bg text-white py-8 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+     <p class="text-lg mb-4">Let's connect and create something amazing together!</p>
+     <p class="opacity-75">© 2024 Anagha Manoj Kumar. All rights reserved.</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      name: "Anagha Manoj Kumar",
+      tagline: "Data Analytics Enthusiast | MCA Student | Problem Solver",
+      phone: "7795796344",
+      email: "anaghamanoj185@gmail.com",
+      linkedin_url: "https://www.linkedin.com/in/anagha-manoj-11a84526a",
+      github_url: "https://github.com/Adhhhi",
+      about_heading: "About Me",
+      skills_heading: "Technical Skills",
+      projects_heading: "Projects & Experience",
+      education_heading: "Education",
+      achievements_heading: "Certifications & Achievements",
+      activities_heading: "Extra-Curricular Activities",
+      background_color: "#f9fafb",
+      primary_color: "#667eea",
+      text_color: "#1f2937",
+      card_background: "#ffffff",
+      accent_color: "#764ba2"
+    };
+
+    async function onConfigChange(config) {
+      document.getElementById('name').textContent = config.name || defaultConfig.name;
+      document.getElementById('tagline').textContent = config.tagline || defaultConfig.tagline;
+      document.getElementById('phone').textContent = config.phone || defaultConfig.phone;
+      document.getElementById('phone-link').href = `tel:${config.phone || defaultConfig.phone}`;
+      document.getElementById('email').textContent = config.email || defaultConfig.email;
+      document.getElementById('email-link').href = `mailto:${config.email || defaultConfig.email}`;
+      document.getElementById('linkedin-link').href = config.linkedin_url || defaultConfig.linkedin_url;
+      document.getElementById('github-link').href = config.github_url || defaultConfig.github_url;
+      
+      document.getElementById('about-heading').textContent = config.about_heading || defaultConfig.about_heading;
+      document.getElementById('skills-heading').textContent = config.skills_heading || defaultConfig.skills_heading;
+      document.getElementById('projects-heading').textContent = config.projects_heading || defaultConfig.projects_heading;
+      document.getElementById('education-heading').textContent = config.education_heading || defaultConfig.education_heading;
+      document.getElementById('achievements-heading').textContent = config.achievements_heading || defaultConfig.achievements_heading;
+      document.getElementById('activities-heading').textContent = config.activities_heading || defaultConfig.activities_heading;
+
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const primaryColor = config.primary_color || defaultConfig.primary_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const cardBg = config.card_background || defaultConfig.card_background;
+
+      document.body.style.backgroundColor = bgColor;
+      document.querySelectorAll('.bg-gray-50').forEach(el => el.style.backgroundColor = bgColor);
+      document.querySelectorAll('.text-gray-900').forEach(el => el.style.color = textColor);
+      document.querySelectorAll('.bg-white').forEach(el => el.style.backgroundColor = cardBg);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => {
+                config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            },
+            {
+              get: () => config.card_background || defaultConfig.card_background,
+              set: (value) => {
+                config.card_background = value;
+                window.elementSdk.setConfig({ card_background: value });
+              }
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => {
+                config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            },
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => {
+                config.primary_color = value;
+                window.elementSdk.setConfig({ primary_color: value });
+              }
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => {
+                config.accent_color = value;
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ["name", config.name || defaultConfig.name],
+          ["tagline", config.tagline || defaultConfig.tagline],
+          ["phone", config.phone || defaultConfig.phone],
+          ["email", config.email || defaultConfig.email],
+          ["linkedin_url", config.linkedin_url || defaultConfig.linkedin_url],
+          ["github_url", config.github_url || defaultConfig.github_url],
+          ["about_heading", config.about_heading || defaultConfig.about_heading],
+          ["skills_heading", config.skills_heading || defaultConfig.skills_heading],
+          ["projects_heading", config.projects_heading || defaultConfig.projects_heading],
+          ["education_heading", config.education_heading || defaultConfig.education_heading],
+          ["achievements_heading", config.achievements_heading || defaultConfig.achievements_heading],
+          ["activities_heading", config.activities_heading || defaultConfig.activities_heading]
+        ])
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9acf0c5f30d847d5',t:'MTc2NTU2MTY2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
